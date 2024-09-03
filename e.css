@@ -13,16 +13,19 @@ body, h1, h2, h3, p, ul, li, a, input {
     --primary-color: #1a73e8; /* Blue */
     --secondary-color: #f0f0f0; /* Light Gray */
     --accent-color: #e0e0e0; /* Slightly darker gray for contrast */
+    --glow-blue: #b3e5fc; /* Glowing blue for top bar and footer */
+    --nav-bar-background: #ffffff; /* White for navigation bar */
     --ads-bar-color: #007bff; /* A slightly different shade of blue for ads bar */
     --ads-text-color: #ffffff; /* White text on ads bar */
 }
 
 /* Utility Top Bar styles */
 .top-bar {
-    background-color: var(--secondary-color);
+    background-color: var(--glow-blue);
     color: #333;
     padding: 5px 20px;
     border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Glow effect */
 }
 
 .top-bar-content {
@@ -47,16 +50,16 @@ body, h1, h2, h3, p, ul, li, a, input {
 }
 
 .zoom-controls button:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: #0d47a1; /* Darker blue for hover */
     transition: 0.3s;
 }
 
 /* Header styles */
 header {
-    background-color: var(--primary-color);
-    color: var(--ads-text-color);
+    background-color: var(--nav-bar-background); /* White background for header */
+    color: var(--primary-color);
     padding: 10px 20px;
-    border-bottom: 5px solid darken(var(--primary-color), 10%);
+    border-bottom: 5px solid #0d47a1; /* Darker blue for border */
 }
 
 .header-content {
@@ -83,23 +86,24 @@ header {
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--nav-bar-background); /* White background for navigation */
     padding: 10px 0;
 }
 
 nav ul li a {
-    color: var(--ads-text-color);
+    color: var(--primary-color);
     font-weight: bold;
     padding: 10px 20px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: darken(var(--primary-color), 10%);
+    background-color: var(--primary-color);
+    color: var(--ads-text-color);
 }
 
 nav ul li a.active {
-    background-color: var(--secondary-color);
+    background-color: lightgray;
     color: var(--primary-color);
     border-radius: 5px;
 }
@@ -108,7 +112,7 @@ nav ul li a.active {
 .ads-bar {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 10px 0;
     text-align: center;
     overflow: hidden;
@@ -200,21 +204,23 @@ nav ul li a.active {
 
 /* Footer styles */
 footer {
-    background-color: var(--primary-color);
-    color: var(--ads-text-color);
+    background-color: var(--glow-blue); /* Light blue for footer */
+    color: var(--primary-color);
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Glow effect */
 }
 
 footer a {
-    color: var(--ads-text-color);
+    color: var(--primary-color);
     margin: 0 10px;
     font-weight: bold;
 }
 
 footer a:hover {
+    color: #0d47a1; /* Darker blue for hover */
     text-decoration: underline;
 }
