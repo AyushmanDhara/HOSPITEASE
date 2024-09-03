@@ -1,0 +1,226 @@
+/* Reset and base styles */
+body, h1, h2, h3, p, ul, li, a, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Updated Color Scheme: Blue and Light Gray */
+:root {
+    --primary-color: #1a73e8; /* Blue */
+    --secondary-color: #f0f0f0; /* Light Gray */
+    --accent-color: #e0e0e0; /* Slightly darker gray for contrast */
+    --glow-blue: #b3e5fc; /* Glowing blue for top bar and footer */
+    --nav-bar-background: #ffffff; /* White for navigation bar */
+    --ads-bar-color: #007bff; /* A slightly different shade of blue for ads bar */
+    --ads-text-color: #ffffff; /* White text on ads bar */
+}
+
+/* Utility Top Bar styles */
+.top-bar {
+    background-color: var(--glow-blue);
+    color: #333;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Glow effect */
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-selection select {
+    padding: 3px;
+    font-size: 1em;
+}
+
+.zoom-controls button {
+    background-color: var(--primary-color);
+    color: var(--ads-text-color);
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.zoom-controls button:hover {
+    background-color: #0d47a1; /* Darker blue for hover */
+    transition: 0.3s;
+}
+
+/* Header styles */
+header {
+    background-color: var(--nav-bar-background); /* White background for header */
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-bottom: 5px solid #0d47a1; /* Darker blue for border */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .logo img {
+    height: 50px;
+}
+
+.header-content .hospital-name h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.header-content .search-bar input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-bar-background); /* White background for navigation */
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--ads-text-color);
+}
+
+nav ul li a.active {
+    background-color: lightgray;
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Scrolling Ads Bar styles */
+.ads-bar {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;
+    color: var(--ads-text-color);
+}
+
+.ads-controls {
+    margin-left: 20px;
+}
+
+.ads-controls button {
+    background-color: #0056b3; /* Darker blue for controls */
+    color: var(--ads-text-color);
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.ads-controls button:hover {
+    background-color: #003f7f; /* Even darker blue on hover */
+    transition: 0.3s;
+}
+
+.ads-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: scrollAds 20s linear infinite;
+    flex-grow: 1;
+}
+
+.ad-item {
+    flex-shrink: 0;
+    margin-right: 50px;
+}
+
+.ad-item img, .ad-item video {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scrollAds {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Three-Section Partition styles */
+.three-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.three-section .section {
+    width: 30%;
+    background-color: var(--accent-color);
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.three-section .section h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.three-section .section p {
+    color: #555;
+}
+
+/* Main Content styles */
+.main-content {
+    width: 100%; /* Full-width content area */
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.main-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--glow-blue); /* Light blue for footer */
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Glow effect */
+}
+
+footer a {
+    color: var(--primary-color);
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #0d47a1; /* Darker blue for hover */
+    text-decoration: underline;
+}
