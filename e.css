@@ -108,7 +108,7 @@ nav ul li a.active {
 .ads-bar {
     display: flex;
     align-items: center;
-    background-color: var(--ads-bar-color);
+    background-color: white;
     padding: 10px 0;
     text-align: center;
     overflow: hidden;
