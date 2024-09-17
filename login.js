@@ -6,7 +6,7 @@ function login() {
   
     if (hospitalId && password && gmailId) {
       alert('Login successful!');
-      window.location.href = 'index.html';// Redirect to dashboard or next page
+      window.location.href = 'home.html';// Redirect to dashboard or next page
     } else {
       alert('Please fill out all fields');
     }
@@ -62,7 +62,7 @@ function generateID() {
   
   // Function to redirect to login page
   function redirectToLogin() {
-    window.location.href = 'home.html';  // Redirect to login page
+    window.location.href = 'index.html';  // Redirect to login page
   }
   
   
