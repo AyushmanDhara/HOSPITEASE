@@ -1,0 +1,76 @@
+/* Generate ID Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0070f8, #fc0578);
+    margin: 10%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .generate-id-container {
+    width: 450px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+  }
+  
+  h2, h3 {
+    color: #0072ff;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #0072ff;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0px 0px 10px rgba(0, 198, 255, 0.5);
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0072ff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  
+  button:hover {
+    background-color: #00c6ff;
+    box-shadow: 0px 8px 15px rgba(0, 198, 255, 0.3);
+  }
+  
+  button:active {
+    background-color: #005bb5;
+  }
+  
+  /* Hide generated ID message by default */
+  #generatedIdMessage {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #hospitalIdDisplay {
+    font-size: 20px;
+    color: #0072ff;
+    font-weight: bold;
+  }
+  

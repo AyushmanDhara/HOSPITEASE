@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Hospital ID</title>
+  <link rel="stylesheet" href="generate_id.css">
+</head>
+<body>
+  <div class="generate-id-container">
+    <h2>Hospital Registration - Generate ID</h2>
+    <form id="generateIdForm">
+      <input type="text" id="hospitalName" placeholder="Hospital Name" required>
+      <input type="email" id="hospitalGmail" placeholder="Hospital Gmail ID" required>
+      <input type="text" id="phoneNumber1" placeholder="Phone Number 1" required>
+      <input type="text" id="phoneNumber2" placeholder="Phone Number 2 (Optional)">
+      <input type="text" id="hospitalAddress" placeholder="Hospital Address" required>
+      <input type="text" id="doctorName" placeholder="Doctor's Name" required>
+      <input type="text" id="hospitalRegister" placeholder="Hospital Register Number" required>
+
+      <h3>Additional Hospital Information</h3>
+      <input type="number" id="numBeds" placeholder="Number of Beds" required>
+      <input type="number" id="numDoctors" placeholder="Number of Doctors" required>
+      <button type="button" onclick="generateID()">Generate ID</button>
+    </form>
+    
+    <div id="generatedIdMessage" style="display:none;">
+      <h3>Your Hospital ID:</h3>
+      <p id="hospitalIdDisplay"></p>
+      <p><strong>Password: </strong>Your chosen password.</p>
+      <button onclick="redirectToLogin()">Proceed to Login</button>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

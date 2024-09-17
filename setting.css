@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    animation: backgroundAnimation 10s ease-in-out infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Background color gradient animation */
+@keyframes backgroundAnimation {
+    0% {
+      background: linear-gradient(135deg, #078fff, #e3eef1);
+    }
+    50% {
+      background: linear-gradient(135deg, #eb4c5f, #e4f4fd);
+    }
+    100% {
+      background: linear-gradient(135deg, #3df5a8, #d381ec);
+    }
+  }
+/* Settings Section Container */
+.settings-container {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Settings Section Title */
+.settings-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #078fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Settings Form */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.settings-form input[type="text"],
+.settings-form input[type="password"],
+.settings-form select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Save Button */
+.settings-form button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.settings-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Section Header */
+.settings-section-header {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Toggle Buttons/Checkboxes */
+.settings-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Profile Picture Section */
+.settings-profile-pic {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.settings-profile-pic img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.settings-profile-pic button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-profile-pic button:hover {
+    background-color: #218838;
+}
+
+/* Privacy, Notifications, and Account Management Sections */
+.settings-section {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Links and Options */
+.settings-form a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.settings-form a:hover {
+    text-decoration: underline;
+}

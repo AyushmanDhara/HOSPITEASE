@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Bed Management</title>
+  <link rel="stylesheet" href="Smart Bed Management System.css">
+<body>
+  <!-- Utility Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+        <div class="language-selection">
+            <label for="language">Language: </label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+        <div class="zoom-controls">
+            <button onclick="zoomIn()">A+</button>
+            <button onclick="zoomOut()">A-</button>
+            <button onclick="resetZoom()">Reset</button>
+        </div>
+    </div>
+</div>
+
+<!-- Header Section -->
+<div class ="header1">
+    <div class="header1-content">
+        <div class="logo-bar">
+            <div class="logo">
+                 <a href="index.html"><img src="Hospitease__1__1_-removebg-preview.png" alt="Company Logo"></a>
+                 <a href="index.html">
+                 <span>HOSPITEASE</span>
+                <div class="logoDetails">
+                    <span>PATIENT WEB PORTAL</span>
+                </div>
+              </a>
+            </div>
+        </div>
+                  <div class="search1-bar">
+                    <input type="text1" placeholder="Search.....">
+                    <button id="settings-button" onclick="goToSettings()">
+                    <img src="setting.png" alt="Settings" >
+                      </button>
+                      
+                    
+                    </div>
+        
+        </div>
+        
+</div>   
+  </div>
+
+  <!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="Appointments.html">Appointments</a></li>
+        <li><a class="active">Smart Bed Management System</a></li>
+        <li><a href="Ab.html">Working</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <!-- Heading Section -->
+    <header>
+      <h1>Smart Bed Management System</h1>
+      <div class="bed-stats">
+        <p><strong>Total Beds:</strong> 500</p>
+        <p><strong>Admitted Patients:</strong> <span id="admittedCount">0</span></p>
+        <p><strong>Available Beds:</strong> <span id="availableBeds">500</span></p>
+      </div>
+    </header>
+
+    <!-- Form Section -->
+    <div class="form-section">
+      <h2>Patient Admission Form</h2>
+      <form id="patientForm">
+        <!-- Form Fields -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+
+        <label for="symptoms">Symptoms:</label>
+        <input type="text" id="symptoms" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" required>
+
+        <label for="doctor">Under Dr :</label>
+        <input type="text" id="doctor" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="altPhone">Alternative Phone:</label>
+        <input type="tel" id="altPhone">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+
+        <label for="andhraNumber">Andhra Number:</label>
+        <input type="text" id="andhraNumber" required>
+
+        <label for="parentName">Parents' Name:</label>
+        <input type="text" id="parentName" required>
+
+        <label for="admitTime">Admitted Time:</label>
+        <input type="text" id="admitTime" readonly>
+
+        <button type="submit">Admit Patient</button>
+      </form>
+    </div>
+
+    <!-- Bed List Section -->
+    <div class="bed-section">
+      <h2>Bed List</h2>
+      <input type="text" id="searchBedList" placeholder="Search Bed List...">
+      <div class="scrollable-section">
+      <table id="bedTable">
+        <thead>
+          <tr>
+            <th>Bed Number</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Symptoms</th>
+            <th>Department</th>
+            <th>Doctor</th>
+            <th>Phone</th>
+            <th>Admitted Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic Rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+    <!-- Discharge Section -->
+    <div class="discharge-section">
+      <h2>Discharge Patient</h2>
+      <input type="text" id="searchDischarge" placeholder="Search Discharge List...">
+      <label for="dischargePatient">Select Patient:</label>
+      <select id="dischargePatient">
+        <option value="" disabled selected>Select a patient</option>
+        <!-- Dynamically added options will appear here -->
+      </select>
+      <button id="dischargeButton">Discharge Patient</button>
+    </div>
+
+    <!-- Discharge History Section -->
+    <div class="discharge-history">
+      <h2>Discharge History</h2>
+      <input type="text" id="searchDischargeHistory" placeholder="Search Discharge History...">
+      <div class="scrollable-section">
+      <table id="dischargeTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Symptoms</th>
+            <th>Department</th>
+            <th>Doctor</th>
+            <th>Phone</th>
+            <th>Admitted Time</th>
+            <th>Discharge Time</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <!-- Dynamic Discharge History Rows will be added here -->
+        </tbody>
+      
+      </table>
+    </div>
+    </div>
+
+    <!-- Real-time Admitted Patients Section -->
+    <div class="admitted-section">
+      <h2>Currently Admitted Patients</h2>
+      <input type="text" id="searchAdmittedPatients" placeholder="Search Admitted Patients...">
+      <div class="scrollable-section">
+      <ul id="admittedPatientsList">
+        <!-- Real-time Admitted Patients List -->
+      </ul>
+    </div>
+    </div>
+
+  </div>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+        <p>Contact us: (123) 456-7890 | hospital@EMAIL</p>
+        <p>&copy; 2024 National Hospital Management System. All Rights Reserved.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+    </div>
+</footer>
+
+  <script src="Smart Bed Management System.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

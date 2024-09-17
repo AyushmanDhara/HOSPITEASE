@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management Portal</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Utility Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="language-selection">
+                <label for="language">Language: </label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+            <div class="zoom-controls">
+                <button onclick="zoomIn()">A+</button>
+                <button onclick="zoomOut()">A-</button>
+                <button onclick="resetZoom()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo-bar">
+                <div class="logo">
+                    <img src="Hospitease__1__1_-removebg-preview.png" alt="Company Logo">
+                    <span>HOSPITEASE</span>
+                    <div class="logoDetails">
+                        <span>PATIENT WEB PORTAL</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Modified Search Bar with Settings Icon -->
+<div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <!-- Settings button -->
+    <button id="settings-button" onclick="goToSettings()">
+        <img src="setting.png" alt="Settings" />
+    </button>
+</div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a  class="active">Home</a></li>
+            <li><a href="Appointments.html">Appointments</a></li>
+            <li><a href="Smart Bed Management System.html">Smart Bed Management System</a></li>
+            <li><a href="#work">Working</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Scrolling Ads Bar -->
+    <div class="ads-bar">
+        <div class="ads-content">
+            <div class="ad-item">
+                <img src="1stbanner.jpg" alt="Ad 1">
+            </div>
+            <div class="ad-item">
+                <img src="2nd.jpg">
+            </div>
+            <div class="ad-item">
+                <img src="3th.jpg" alt="Ad 3">
+            </div>
+            <div class="ad-item">
+                <img src="2.jpeg" alt="Ad 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Three-Section Partition -->
+    
+    <div class="three-section">
+        <div class="scrollable-container">
+        <div class="section">
+            <h3>Introduction</h3>
+            <p>At HOSPITEASE, our mission is to deliver outstanding healthcare with a commitment to excellence and compassion. We offer a comprehensive range of medical services and specialties, supported by cutting-edge technology and a dedicated team of healthcare professionals. Our patient-centered approach ensures that you receive personalized care tailored to your needs.
+
+                Explore our website to learn more about our services, meet our specialists, and discover how we can support your health and well-being. At HOSPITEASE, your health is our top priority, and we are here to guide you every step of the way.
+                
+                Thank you for visiting HOSPITEASE where exceptional care meets compassionate support.</p>
+        </div>
+    </div>
+    <div class="scrollable-container">
+        <div class="section">
+            <h3>Departments</h3>
+            <p>The General Medicine clinic is often the first point of contact for patients. It provides routine care and manages a wide range of common illnesses, from infections to chronic diseases like hypertension and diabetes. Doctors here are usually the ones who refer patients to other specialists if advanced care is needed.</p>
+
+        <p> The Cardiology Clinic specializes in the diagnosis and treatment of heart-related conditions. From heart disease to hypertension, cardiologists provide critical care that can prevent life-threatening conditions such as heart attacks.</p>
+                
+        <p> The Orthopedic Department focuses on the musculoskeletal system, treating injuries and conditions affecting the bones, joints, and muscles. This clinic plays an essential role in rehabilitation after fractures, surgeries, or degenerative conditions.</p>
+                
+        <p> Dermatology Clinics are dedicated to treating skin, hair, and nail conditions. From acne and eczema to more serious concerns like skin cancer, dermatologists provide both medical and cosmetic treatments.</p>
+                
+        <p>  The Pediatrics Clinic specializes in children's health, managing everything from vaccinations to the treatment of childhood diseases. Pediatricians ensure that children grow up healthy by monitoring their physical and mental development.</p>
+                
+        <p>   The ENT (Ear, Nose, and Throat) clinic focuses on conditions affecting the head and neck areas. Specialists in this field address issues like hearing loss, sinus infections, and throat disorders.</p>
+                
+        <p>  Gastroenterology is concerned with digestive health. Gastroenterologists diagnose and treat problems related to the stomach, intestines, and liver, including conditions like ulcers and irritable bowel syndrome.</p>
+                
+        <p>  The Endocrinology Clinic focuses on hormonal disorders such as diabetes, thyroid imbalances, and metabolic conditions. Endocrinologists help patients manage these chronic conditions through medication and lifestyle changes.</p>
+                
+        <p>  Lastly, Rehabilitation and Physical Therapy departments offer crucial recovery services for patients recovering from surgery, injury, or chronic pain. They focus on restoring function, mobility, and strength, often in collaboration with other medical departments.</p>
+                
+        </div>
+    </div>
+    <div class="scrollable-container">
+        <div class="section">
+            <h3>Services</h3>
+            <p>HOSPITEASE is a revolutionary web portal designed to enhance the efficiency and convenience of healthcare services. It provides a seamless experience for both patients and hospital staff by integrating key services such as online appointment booking, OPD section management, AI-powered smart bed allocation, and real-time medicine store stock details. This cutting-edge platform is designed to streamline hospital operations, making healthcare more accessible and efficient.</p>
+
+            <p>One of the standout features of HOSPITEASE is its online appointment system. Patients can book appointments with doctors at their convenience, reducing wait times and enhancing patient satisfaction. The platform provides real-time updates on doctor availability, allowing patients to make informed decisions about their appointments. The system also helps hospitals manage patient flow more effectively, ensuring that resources are optimally used.</p>
+
+            <p>The OPD section management in HOSPITEASE further enhances the patient experience. Hospitals can efficiently manage outpatient services, track appointments, and provide updates to patients. This ensures smooth operation and improved communication between patients and healthcare providers.</p>
+
+            <p>A key innovation in HOSPITEASE is its AI-driven smart bed allocation system. By utilizing artificial intelligence, the platform ensures that beds are allocated based on the needs of the patients and hospital resources. This reduces manual effort, optimizes bed usage, and ensures that patients receive the care they need promptly.</p>
+
+            <p>Additionally, HOSPITEASE provides real-time information on medicine stock levels. Hospital staff can easily track inventory, ensuring that critical medicines are always available, preventing shortages, and improving overall efficiency in patient care.</p>
+
+           <p>Overall, HOSPITEASE is a comprehensive solution that leverages technology to improve hospital management, making healthcare services faster, more efficient, and patient-centric. It’s an essential tool for hospitals looking to modernize their operations and offer exceptional patient care.</p>
+        </div>
+    </div>
+  </div> 
+  <div class="container11">
+    <div class="scrollable-container1">
+        <h2>User Manual for Hospital Facilities Webpage</h2>
+<h3>Introduction:</h3>
+<p></p>Welcome to the user manual for the hospital facilities webpage. This guide will help you navigate and utilize the two primary sections of the webpage: Appointments and Smart Bed Allocation. This system is designed to streamline hospital operations and enhance patient experience by allowing easy management of appointments and efficient bed allocation.
+
+<h3>Appointments Section:</h3>
+<p></p>The Appointments section allows users to book, view, and manage medical appointments.
+
+<h3>Booking an Appointment:</h3>
+
+<h5>Navigate to the Appointments Section:</h5>
+
+On the homepage, click on the "Appointments" tab located in the sidebar.
+<h5>Select Appointment Type:</h5>
+
+Choose the type of appointment you need from the dropdown menu (e.g., General Consultation, Specialist Consultation, Follow-Up).
+<h5>Choose a Date and Time:</h5>
+
+Use the calendar interface to select your preferred date and time slot. Available slots will be shown in green, while booked slots will be in red.
+<h5>Enter Patient Details:</h5>
+
+Fill out the form with required details such as patient name, contact number, and any additional notes.
+<h5>Confirm Appointment:</h5>
+Review your details and click on the "Book Appointment" button. You will receive a confirmation message and an email with appointment details.
+<h3> Viewing and Managing Appointments:</h3>
+
+    <h5>Access Your Appointments:</h5>
+
+Click on the "My Appointments" tab to view your current and past appointments.
+Cancel or Reschedule:
+
+Select the appointment you wish to modify. You can choose to cancel or reschedule by following the prompts provided.
+<h5>Check Appointment History:</h5>
+
+View a history of all your past appointments and their outcomes.
+<h3> Smart Bed Allocation Section</h3>
+    <p>The Smart Bed Allocation section manages bed assignments using advanced algorithms to optimize bed usage based on various criteria.
+
+<h5> Viewing Available Beds:</h5>
+
+<h5>Navigate to the Smart Bed Allocation Section:</h5>
+
+Click on the "Smart Bed Allocation" tab from the 
+<h5>Check Bed Availability:</h5>
+
+A dashboard will display the current bed status. Available beds are marked in green, while occupied ones are in red.
+<h5>View Bed Details:</h5>
+
+Click on a bed to see detailed information, including patient history and medical requirements.
+<h3> Requesting Bed Allocation:</h3>
+
+    <h5>Initiate Bed Request:</h5>
+
+Click on the "Request Bed" button. You will be prompted to enter patient details and medical needs.
+<h5>Select Bed Criteria:</h5>
+
+Choose criteria for bed allocation such as type of bed (e.g., ICU, General Ward), patient condition, and proximity to specific departments.
+<h5>Submit Request:</h5>
+
+After entering the details, click "Submit Request". The system will process the request and assign a bed based on availability and criteria.
+<h5>Receive Confirmation:</h5>
+
+You will receive a confirmation of the bed allocation along with details about the assigned bed.
+<h3>Managing Bed Allocations:</h3>
+
+    <h5>View Allocated Beds:</h5>
+
+Access the "Allocated Beds" section to see which beds are currently in use and by whom.
+<h5>Reallocate Beds:</h5>
+
+If needed, you can reallocate beds by selecting the current allocation and choosing new criteria for reassignment.
+<h5>Generate Reports:</h5>
+
+Use the reporting feature to generate summaries of bed usage, availability, and allocation.
+    </div>
+  </div>
+  <div class="container">
+    <div class="scrollable-container1">
+   <h3> Hospital Guidelines:</h3>
+
+<p>Hospitals are critical institutions for maintaining public health, and adhering to guidelines is essential for ensuring patient safety and operational efficiency. Here are some fundamental guidelines that hospitals should follow:</p>
+
+    <p>Patient Care and Safety: The primary focus should be on patient care and safety. Hospitals should adhere to protocols for infection control, patient privacy, and medication management. Regular staff training and adherence to hygiene standards are crucial in preventing infections and ensuring safe procedures.</p>
+
+        <p>Emergency Procedures: Hospitals should have well-defined emergency procedures for various scenarios, including natural disasters, fire, and medical emergencies. Staff should be trained to handle these situations effectively, and regular drills should be conducted to ensure preparedness.</p>
+            <p>Staff Training and Competency: Continuous professional development is vital. Hospitals should provide regular training for all staff members, including doctors, nurses, and administrative personnel. Training should cover the latest medical practices, technological advancements, and soft skills like communication and empathy.</p>
+
+                <p>Patient Records and Confidentiality: Maintaining accurate and confidential patient records is essential. Hospitals must comply with regulations such as HIPAA (Health Insurance Portability and Accountability Act) to protect patient information. Access to records should be limited to authorized personnel only.</p>
+
+                    <p>Quality Assurance: Implementing a quality assurance program helps in maintaining high standards of care. Hospitals should regularly review procedures, patient outcomes, and feedback to identify areas for improvement and implement corrective actions.</p>
+
+                        <p>Facility Management: Hospitals should ensure that their facilities are well-maintained and safe for patients and staff. Regular inspections and maintenance of medical equipment, cleanliness, and safe infrastructure are essential.</p>
+
+                            <p>Patient Communication: Clear and compassionate communication with patients and their families is crucial. Hospitals should provide information about treatment options, procedures, and expected outcomes in an understandable manner.</p>
+
+                                <p>Compliance and Ethics: Adhering to legal and ethical standards is fundamental. Hospitals must follow relevant laws and regulations and ensure that all practices are ethical and transparent.</p>
+                            </div>
+                        </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Contact us: (123) 456-7890 | hospital@EMAIL</p>
+            <p>&copy; 2024 National Hospital Management System. All Rights Reserved.</p>
+            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+        </div>
+    </footer>
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <h4>Need Help? Chat with Us!</h4>
+            <dev class="bs">
+            <button onclick="toggleChat()">X</button></dev>
+        </div>
+        <div class="chatbot-body">
+            <div id="chat-history"></div>
+            <input type="text" id="userInput" placeholder="Ask a question..." onkeydown="handleChat(event)">
+        </div>
+    </div>
+
+    <!-- Chatbot Icon with Pop-up Message -->
+    <div class="chatbot-icon-container">
+        <div class="chatbot-icon" id="chatbot-icon" onclick="toggleChat()" >
+            <img src="bot.png">
+        </div>
+        <div class="pop-up-message" id="pop-up-message">
+            Ask any Query!
+        </div>
+            
+    </div>
+    
+
+    
+
+    <!-- JavaScript Section -->
+    <script src="index.js"></script>
+    <script src="index1.js"></script>
+</body>
+</html>

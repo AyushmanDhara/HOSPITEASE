@@ -1,0 +1,368 @@
+
+/* Updated Color Scheme: Blue and Light Gray */
+:root {
+  --primary-color: #1a73e8; /* Blue */
+  --secondary-color: #f0f0f0; /* Light Gray */
+  --accent-color: #e0e0e0; /* Slightly darker gray for contrast */
+  --glow-blue: #b3e5fc; /* Glowing blue for top bar and footer */
+  --nav-bar-background: #ffffff; /* White for navigation bar */
+  --ads-bar-color: #007bff; /* A slightly different shade of blue for ads bar */
+  --ads-text-color: #ffffff; /* White text on ads bar */
+}
+
+/* Utility Top Bar styles */
+.top-bar {
+  background-color: var(--glow-blue);
+  color: #333;
+  padding: 5px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Glow effect */
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-selection select {
+  padding: 3px;
+  font-size: 1em;
+}
+
+.zoom-controls button {
+  background-color: var(--primary-color);
+  color: var(--ads-text-color);
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.zoom-controls button:hover {
+  background-color: #0d47a1; /* Darker blue for hover */
+  transition: 0.3s;
+}
+
+/* Header styles */
+.header1 {
+  background-color: var(--nav-bar-background); /* White background for header */
+  color: var(--primary-color);
+  padding: 12px 25px; 
+}
+.header1 a {
+  text-decoration: none;
+}
+.header1-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 52px;
+  height: 59px;
+  left: 10px;
+}
+
+.logo span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #007bff ; /* Deep blue for the hospital name */
+  margin-left: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.logoDetails {
+  margin-left: 100px;
+}
+.logoDetails span {
+  font-size: 16px;
+  font-weight: normal;
+  color: #007bff ;  /* You can adjust the color to match your design */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logoDetails1 {
+  margin-top: 5px;
+}
+.logoDetails1 span {
+  font-size: 40px;
+  font-weight: normal;
+  color: #b90802 ;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.header1-content{
+  padding: 5px;
+  font-size: 1em;
+  display: flex;
+
+}
+.search1-bar input {
+  padding: 5px;
+  font-size: 1em;}
+input[type="text1"] {
+  width: 70%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: var(--nav-bar-background); /* White background for navigation */
+  padding: 20px 0px;
+  border-bottom: 2px solid #007bff;
+  border-top: 2px solid #007bff ;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 20px;
+}
+
+nav ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--ads-text-color);
+}
+
+nav ul li a.active {
+  background-color: lightgray;
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 05px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.bed-stats p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+h2 {
+  color: #2980b9;
+  margin-top: 20px;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2ecc71;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #ecf0f1;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #2980b9;
+}
+
+/* Search Input Styles */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+/* Discharge Dropdown */
+select {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Discharge & Admitted List Styles */
+.admitted-section ul, .discharge-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admitted-section ul li {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.discharge-section ul li {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  form input, form select {
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+}
+/* Footer styles */
+footer {
+  margin-top: 15px;
+  background-color: var(--glow-blue); /* Light blue for footer */
+  color: var(--primary-color);
+  text-align: center;
+  padding: 8px;
+  position: relative;
+  bottom: 0;
+  width: 99%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Glow effect */
+}
+
+footer a {
+  color: var(--primary-color);
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #0d47a1; /* Darker blue for hover */
+  text-decoration: underline;
+}
+.scrollable-section {
+  max-height: 100px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Style for the settings button */
+#settings-button {
+  top: 10px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+#settings-button img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect */
+#settings-button:hover img {
+  transform: scale(1.2);  /* Enlarge the icon */
+  opacity: 0.8;  /* Slightly reduce opacity */
+}

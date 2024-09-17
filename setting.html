@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2 class="settings-title">Account Settings</h2>
+
+        <!-- Profile Picture Section -->
+        <div class="settings-profile-pic">
+            <img src="profile-pic.jpg" alt="Profile Picture">
+            <button>Change Profile Picture</button>
+        </div>
+
+        <!-- Settings Form -->
+        <form class="settings-form">
+            <div class="settings-section">
+                <label for="username" class="settings-section-header">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" value="current_username">
+            </div>
+
+            <div class="settings-section">
+                <label for="password" class="settings-section-header">Change Password</label>
+                <input type="password" id="password" placeholder="Enter new password">
+            </div>
+
+            <div class="settings-section">
+                <label class="settings-section-header">Privacy Settings</label>
+                <div>
+                    <input type="checkbox" id="public-profile" checked>
+                    <label for="public-profile">Make my profile public</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="email-notifications">
+                    <label for="email-notifications">Enable email notifications</label>
+                </div>
+            </div>
+
+            <button type="submit">Save Changes</button>
+        </form>
+
+        <div class="settings-section">
+            <p class="settings-section-header">Account Management</p>
+            <a href="#deactivate-account">Deactivate Account</a> |
+            <a href="#delete-account">Delete Account</a>|
+            <a href="home.html">Home</a>
+        </div>
+    </div>
+
+    
+</body>
+</html>

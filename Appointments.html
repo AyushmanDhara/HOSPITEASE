@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment System</title>
+    <link rel="stylesheet" href="Appointments.css">
+</head>
+<body>
+    <!-- Utility Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-content">
+        <div class="language-selection">
+            <label for="language">Language: </label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+        <div class="zoom-controls">
+            <button onclick="zoomIn()">A+</button>
+            <button onclick="zoomOut()">A-</button>
+            <button onclick="resetZoom()">Reset</button>
+        </div>
+    </div>
+</div>
+
+<!-- Header Section -->
+<div class ="header1">
+    <div class="header1-content">
+        <div class="logo-bar">
+            <div class="logo">
+                 <a href="index.html"><img src="Hospitease__1__1_-removebg-preview.png" alt="Company Logo"></a>
+                 <a href="index.html">
+                 <span>HOSPITEASE</span>
+                <div class="logoDetails">
+                    <span>PATIENT WEB PORTAL</span>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!-- Modified Search Bar with Settings Icon -->
+<div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <!-- Settings button -->
+    <button id="settings-button" onclick="goToSettings()">
+        <img src="setting.png" alt="Settings" />
+    </button>
+</div>
+        </div>
+    </div>
+  </div>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="home.html" >Home</a></li>
+        <li><a class="active">Appointments</a></li>
+        <li><a href="Smart Bed Management System.html">Smart Bed Management System</a></li>
+        <li><a href="About.html">Working</a></li>
+        <li><a href="About.html">About</a></li>
+    </ul>
+</nav>
+   <h2>Hospital Appointment System</h2>
+
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <h3>Patient Information</h3>
+            <input type="number" id="patientNo" placeholder="Patient No">
+            <input type="text" id="patientName" placeholder="Patient Name">
+            <input type="number" id="patientAge" placeholder="Age">
+            <textarea id="symptoms" placeholder="Symptoms"></textarea>
+            <select id="department">
+                <option value="" disabled selected>Select Department</option>
+                <option value="General Medicine">General Medicine</option>
+                <option value="Cardiology Clinic">Cardiology Clinic</option>
+                <option value="Orthopedic Department">Orthopedic Department</option>
+                <option value="Dermatology Clinic">Dermatology Clinic</option>
+                <option value="Pediatrics Clinic">Pediatrics Clinic</option>
+                <option value="ENT">ENT</option>
+                <option value="Gastroenterology">Gastroenterology</option>
+                <option value="Endocrinology Clinic">Endocrinology Clinic</option>
+                <option value="Ophthalmology Clinic">Ophthalmology Clinic</option>
+                <option value="Rehabilitation and Physical Therapy">Rehabilitation and Physical Therapy</option>
+            </select>
+            <input type="text" id="phone" placeholder="Phone Number">
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="altPhone" placeholder="Alternative Phone Number">
+            <button class="btn-submit" onclick="addPatient()">Add Patient</button>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="chart-section">
+            <h3>Department & Patients</h3>
+            <ul id="departmentList"></ul>
+            <button class="btn-back" id="btnBack" onclick="showDepartments()">Back to Departments</button>
+        </div>
+
+        <!-- History Section with Scroll and Search -->
+<div class="history-section">
+    <h3>Appointment History</h3>
+    
+    <!-- Search Section -->
+    <div class="search-history">
+        <input type="text" id="searchName" placeholder="Search by Patient Name" onkeyup="searchHistory()">
+        <input type="number" id="searchNo" placeholder="Search by Patient No" onkeyup="searchHistory()">
+    </div>
+    
+    <!-- Appointment History List with Scroll -->
+    <ul id="historyList" class="scrollable-history">
+        <!-- List items will be added dynamically -->
+    </ul>
+</div>
+
+    </div>
+    <div class="container1">
+        <div class="search-section">
+            <input type="text" id="searchBox" placeholder="Search patient by name or department...">
+            <button onclick="searchTickets()">Search</button>
+        </div>
+
+        <!-- Scrollable Section for Tickets -->
+        <div class="scrollable-section">
+        <div id="ticketContainer">
+            <!-- Tickets will be appended here -->
+        </div>
+    </div>
+    </div>
+</div>
+    <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+        <p>Contact us: (123) 456-7890 | hospital@EMAIL</p>
+        <p>&copy; 2024 National Hospital Management System. All Rights Reserved.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+    </div>
+</footer>
+
+    <script src="Appointments.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
