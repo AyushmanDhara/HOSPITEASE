@@ -62,7 +62,7 @@ function generateID() {
   
   // Function to redirect to login page
   function redirectToLogin() {
-    window.location.href = 'hoe.html';  // Redirect to login page
+    window.location.href = 'home.html';  // Redirect to login page
   }
   
   
